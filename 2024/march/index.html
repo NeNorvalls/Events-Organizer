@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events Organizer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-container">
+        <h1>Events Organizer</h1>
+        <label>Events: </label>
+        <input type="text" id="event-input" />
+        <br />
+        <label>Dates: </label>
+        <input type="date" id="date-input" />
+        <br />
+        <label>Notes: </label>
+        <input type="text" id="notes-input" />
+        <br />
+        <button onclick="addEvent()">SUBMIT</button>
+      </div>
+      <div class="results-container">
+        <h2>Events List</h2>
+        <ul id="events-list"></ul>
+      </div>
+    </div>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
