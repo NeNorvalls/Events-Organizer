@@ -51,10 +51,9 @@ button {
 button {
   background-color: #4caf50;
   color: white;
-  border: none;
+  border: #fff;
   cursor: pointer;
-  height: 30px;
-  border-radius: 50%;
+  border-radius: 10px;
 }
 
 button:hover {
@@ -68,7 +67,7 @@ ul {
 }
 
 li {
-  margin-bottom: 10px;
+  margin: 1rem;
   background-color: #fff;
   padding: 15px;
   border-radius: 5px;
@@ -83,11 +82,19 @@ li span {
 }
 
 li button {
-  background-color: #ff6347;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1;
   padding: 0;
+  right: 0;
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  margin: 1rem;
+}
+
+li button:hover {
+  background-color: #e43314;
 }
 
 @media (max-width: 768px) {
