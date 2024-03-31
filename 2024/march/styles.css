@@ -2,6 +2,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-image: url("https://images.pexels.com/photos/4194854/pexels-photo-4194854.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -18,16 +21,17 @@ body {
 
 .input-container {
   border-right: 1px solid #ccc;
-  background-color: #f0f0f0;
 }
 
 .results-container {
-  background-color: #e0e0e0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 h1,
 h2 {
   margin-top: 0;
+  color: #fff;
 }
 
 label {
