@@ -29,15 +29,6 @@ This is a simple web application for organizing events. It allows users to add, 
 - Clicking the "Remove" button (represented by "X") next to an event calls the `deleteEvent()` function.
 - This function removes the selected event from the local storage and reloads the events list.
 
-## Deployment
-
-The application can be deployed using a platform like **Netlify**. Simply upload the HTML, CSS, and JavaScript files to your repository and deploy them using Netlify.
-
 ## Accessing the Application
 
 You can access the live version of the application [here](https://events-organizer.netlify.app/).
-
-## Additional Notes
-
-- Ensure that JavaScript is enabled in your browser for the application to function properly.
-- This is a basic implementation and can be further enhanced with features like editing events, sorting, or filtering events based on date, etc.

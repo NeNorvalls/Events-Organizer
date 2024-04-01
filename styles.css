@@ -124,3 +124,24 @@ button:hover {
     border-bottom: 1px solid #ccc;
   }
 }
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: #daa520;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #45a049;
+}
