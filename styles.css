@@ -50,6 +50,7 @@ input[type="date"] {
 }
 
 button {
+  display: flex;
   background-color: #4caf50;
   color: white;
   padding: 10px 20px;
@@ -58,6 +59,7 @@ button {
   cursor: pointer;
   border-radius: 5px;
   width: 90px;
+  justify-content: center;
 }
 
 button:hover {
