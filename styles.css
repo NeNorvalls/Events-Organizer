@@ -32,69 +32,82 @@ h1,
 h2 {
   margin-top: 0;
   color: #fff;
+  letter-spacing: 3px;
 }
 
 label {
   display: block;
   margin-bottom: 5px;
+  color: white;
 }
 
 input[type="text"],
-input[type="date"],
-button {
+input[type="date"] {
   width: calc(100% - 16px);
-  padding: 8px;
-  margin-bottom: 10px;
+  padding: 10px;
+  margin: 5px 0;
   box-sizing: border-box;
 }
 
 button {
   background-color: #4caf50;
   color: white;
-  border: #fff;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: none;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 5px;
+  width: 90px;
 }
 
 button:hover {
   background-color: #45a049;
 }
 
-ul {
+/* Style for events list */
+#events-list {
   list-style-type: none;
   padding: 0;
-  margin: 0;
-}
-
-li {
-  margin: 1rem;
   background-color: #fff;
-  padding: 15px;
+}
+
+#events-list li {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
-li span {
-  flex: 1;
+#events-list li span {
+  font-weight: 300;
 }
 
-li button {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1;
-  padding: 0;
-  right: 0;
-  position: fixed;
-  width: 35px;
-  height: 35px;
-  margin: 1rem;
+/* Style for delete button */
+#delBtn {
+  background-color: #f44336;
 }
 
-li button:hover {
-  background-color: #e43314;
+#delBtn:hover {
+  background-color: #e20805;
+}
+
+/* Style for edit button */
+#editBtn {
+  background-color: #4caf50;
+}
+
+#editBtn:hover {
+  background-color: #083054;
+}
+
+/* Common styles for both buttons */
+#events-list li button {
+  color: white;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
 }
 
 @media (max-width: 768px) {

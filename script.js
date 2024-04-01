@@ -44,14 +44,34 @@ function loadEvents() {
   events.forEach(function (event, index) {
     const li = document.createElement("li");
     li.innerHTML = `<span>${event.event} - ${event.date} - ${event.notes}</span>
-                    <button onclick="deleteEvent(${index})">X</button>`;
+                      <button id="delBtn" onclick="deleteEvent(${index})">Delete</button>
+                      <button id="editBtn" onclick="editEvent(${index})">Edit</button>`;
     eventsList.appendChild(li);
   });
 }
 
 function deleteEvent(index) {
-  let events = JSON.parse(localStorage.getItem("events")) || [];
-  events.splice(index, 1);
+  const events = JSON.parse(localStorage.getItem("events")) || [];
+  events.splice(index, 1); // Remove the event at the given index
   localStorage.setItem("events", JSON.stringify(events));
-  loadEvents(); // Reload events list after deletion
+  loadEvents(); // Reload the events list
+}
+
+function editEvent(index) {
+  const events = JSON.parse(localStorage.getItem("events")) || [];
+  const eventToEdit = events[index];
+  const newEvent = prompt(
+    "Enter new event details:",
+    `${eventToEdit.event} - ${eventToEdit.date} - ${eventToEdit.notes}`
+  );
+  if (newEvent !== null) {
+    const [newEventName, newEventDate, newEventNotes] = newEvent.split(" - ");
+    events[index] = {
+      event: newEventName,
+      date: newEventDate,
+      notes: newEventNotes,
+    };
+    localStorage.setItem("events", JSON.stringify(events));
+    loadEvents(); // Reload the events list
+  }
 }
